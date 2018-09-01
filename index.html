@@ -13,21 +13,22 @@
                 <!--Login menu-->
                 <nav id="utilityMenu">
                     <ul>
-                        <li><a href="#"><img src="img" alt="Facebook" class="socialIcon"></a></li>
-                        <li><a href="#"><img src="img" alt="Twitter" class="socialIcon"></a></li>
-                        <li><a href="#"><img src="img" alt="Google Plus" class="socialIcon"></a></li>
-                        <li class="acctNav"><img src="img" alt="Cart" class="socialIcon"></li>
-                        <li class="acctNav"><a href="#" class="active">Login</a></li>                       
-                        <li><input type="search" id="search" placeholder="Search"></li>
+                        <li><a href="#"><img src="img/icons/facebook.svg" alt="Facebook" class="socialIcon"></a></li>
+                        <li><a href="#"><img src="img/icons/twitter.svg" alt="Twitter" class="socialIcon"></a></li>
+                        <li><a href="#"><img src="img/icons/instagram.svg" alt="Instagram" class="socialIcon"></a></li>
+                        <li><a href="#"><img src="img/icons/shopping-cart.svg" alt="Cart" class="socialIcon"></a></li>
+                        <li><a href="#"><img src="img/icons/login.svg" alt="Login" class="socialIcon"></a></li>                       
+                        <li><input type="search" id="search" placeholder="Search" height=""></li>
                     </ul>
                 </nav>
                 <!--Title frame-->
                 <h1>Edgar's Enhanced Emporium</h1>
                 <h2>Market</h2>
             </div>
+            <div class="clear"></div>
             <div class="hBottom">
                 <!--Navigation menu-->
-                <nav>
+                <nav id="shopMenu">
                     <ul>
                         <li><a href="#">Super Sourvenirs</a></li>
                         <li><a href="#">Malicious Memories</a></li>
@@ -38,70 +39,123 @@
                 </nav>
             </div>
         </header>
-        <section id="sidebar">
-            <!--Sidebar text-->
-                <div class="contentWrapper">
-                    <h1>RSS Feed</h1>
-                    <div id="falseFeed">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!--Main page body-->
+        <div id="mainBody" class="contentWrapper">
+            <section id="sidebar">
+                <!--Sidebar (Fake RSS feed-->
+                    <div>
+                        <h1>RSS Feed</h1>
+                        <div id="falseFeed">
+                            <div id="falseFeedPanel">
+                                <a href="#">Vibranium Discovered on Black Market</a>
+                                <p>August 20th, 2018</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <hr>
+                            <div id="falseFeedPanel">
+                                <a href="#">Department of Damage Control Opens Vault</a>
+                                <p>July 15th, 2018</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <hr>
+                            <div id="falseFeedPanel">
+                                <a href="#">Adamantium: Fact or Fiction?</a>
+                                <p>June 10th, 2018</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>                            
+                            <hr>
+                            <div id="falseFeedPanel">
+                                <a href="#">The Culling: Avengers Responsible?</a>
+                                <p>May 5th, 2018</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <hr>
+                            <div id="falseFeedPanel">
+                                <a href="#">Half of World Population Disappears</a>
+                                <p>April 27th, 2018</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <br/>
                     </div>
-                    <br/>
+                <!--Superhero profiles-->
+                    <h1>Wiki Profiles</h1>
+                        <ul>
+                            <li><a href="#">Iron Man</a></li>
+                            <li><a href="#">Hulk</a></li>
+                            <li><a href="#">Thor</a></li>
+                            <li><a href="#">Captain America</a></li>
+                            <li><a href="#">Thor</a></li>
+                            <li><a href="#">Black Widow</a></li>
+                            <li><a href="#">Spider-Man</a></li>
+                        </ul>
+            </section>
+            <!--Item sales-->
+            <section id="main">
+                <h1>Shop for Memorabilia</h1>
+                <!--Groupings of Items-->          
+                <div class="panel">
+                    <img src="img/crazyants.png" class="superSourv" alt="Crazy Ants">
+                    <h2>Crazy Ants (Live)</h2>
+                    <p>Discovered snacking on a discarded Mango Fruit Blast by a Baskin Robbins Supervisor. Warning: Very energetic. Do not place habitat near phones or other electronics.</p>
+                    <button>Order</button>
                 </div>
-            <!--Recipe list-->
-                <h1>Profiles</h1>
-                    <ol>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                    </ol>
-        </section>
-        <section id="main">
-            <!--Main section-->
-            <h1>Shop for Cheese</h1>
-            <!--Six different cheeses-->
-            <div class="panel">
-                <img src="" class="cheeseType" alt="cheese">
-                <h2>Soft-Ripened</h2>
-                <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
-                <button>Order</button>
-            </div>            
-            <div class="panel">
-                <img src="" class="cheeseType" alt="cheese">
-                <h2>Firm/Hard</h2>
-                <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
-                <button>Order</button>
-            </div>
-            <div class="panel">
-                <img src="" class="cheeseType" alt="cheese">
-                <h2>Blue</h2>
-                <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
-                <button>Order</button>
-            </div>
-            <div class="panel">
-                <img src="" class="cheeseType" alt="cheese">
-                <h2>Natural Rind</h2>
-                <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
-                <button>Order</button>
-            </div>
-            <div class="panel">
-                <img src="" class="cheeseType" alt="cheese">
-                <h2>Processed</h2>
-                <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
-                <button>Order</button>
-            </div>
-            <div class="panel">
-                <img src="" class="cheeseType" alt="cheese">
-                <h2>Semi-soft</h2>
-                <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
-                <button>Order</button>
-            </div>
-        </section>
+                <div class="panel">
+                    <img src="img/depletedarcreactor.jpg" class="superSourv" alt="Arc Reactor">
+                    <h2>Depleted Arc Reactor</h2>
+                    <p>Acquired from a Stark estate sale. Warning: Prolonged exposure may result in radiation poisoning.</p>
+                    <button>Order</button>
+                </div> 
+                <div class="panel">
+                    <img src="img/hulkpants.jpg" class="superSourv" alt="sourvenir">
+                    <h2>Hulk's "Slightly" Used Pants</h2>
+                    <p>Multiple pairs, worn only once! Disclaimer: Individual items may display differing degrees of fraying.</p>
+                    <button>Order</button>
+                </div> 
+                <div class="panel">
+                    <img src="" class="superSourv" alt="sourvenir">
+                    <h2>Natural Rind</h2>
+                    <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
+                    <button>Order</button>
+                </div>
+                <div class="panel">
+                    <img src="" class="superSourv" alt="sourvenir">
+                    <h2>Processed</h2>
+                    <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
+                    <button>Order</button>
+                </div>
+                <div class="panel">
+                    <img src="" class="superSourv" alt="sourvenir">
+                    <h2>Semi-soft</h2>
+                    <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
+                    <button>Order</button>
+                </div>
+                <div class="panel">
+                    <img src="" class="superSourv" alt="sourvenir">
+                    <h2>Semi-soft</h2>
+                    <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
+                    <button>Order</button>
+                </div>
+                <div class="panel">
+                    <img src="" class="superSourv" alt="sourvenir">
+                    <h2>Semi-soft</h2>
+                    <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
+                    <button>Order</button>
+                </div>
+                <div class="panel">
+                    <img src="" class="superSourv" alt="sourvenir">
+                    <h2>Semi-soft</h2>
+                    <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
+                    <button>Order</button>
+                </div>
+                <div class="panel">
+                    <img src="" class="superSourv" alt="sourvenir">
+                    <h2>Semi-soft</h2>
+                    <p>Cheesy grin who moved my cheese cheesecake roquefort melted cheese swiss cauliflower cheese airedale. Fromage frais macaroni cheese parmesan.</p>
+                    <button>Order</button>
+                </div>
+            </section>
+        </div>
         <div class="clear"></div>
         <footer>
             <!--Legal items, navigational items-->
@@ -112,6 +166,7 @@
                 <li><a href="#">Terms of Use</a></li>
                 <li>Website by Robert P Baxter, Ph.D.</li>
             </ul>
+            <div>Select icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a>and <a href="http://www.freepik.com" title="Freepik">Freepik</a>from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         </footer>
 
     </body>

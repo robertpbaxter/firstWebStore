@@ -9,10 +9,10 @@ body{
 }
 
 h1{
-    color:#2ba967;
-    font-size: 2.0em;
-    margin: 0.5em 0 0.5em 0;
-    padding: 0;
+    color:#984843;
+    font-size: 3.0em;
+    margin: 0 0 0.5em 1em;
+    padding: 0 ;
 }
 
 h2{
@@ -22,36 +22,34 @@ h2{
     margin: 0.5em 0 0.35em 0;
 }
 
+a{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #984843;
+    padding: 0;
+    margin: 0 0.5em 0.75em 0;
+    text-decoration: none;
+}
+
+a, a:visited{
+    color: #984843;
+}
+
+a:hover{
+    color: #18121e;
+}
+
 p{
     font-size: 1.2em;
     line-height: 1.4em;
-    color: #555;
+    color: #18121e;
     padding: 0;
     margin: 0 0.5em 0.75em 0;
 }
 
-ol{
-    font-size: 1.2em;
-    margin: 0 0 0 1.0em;
-    padding: 0 0 0 1.0em;
-}
-
-ol li{
-    margin: 0;
-    padding: 0 0 0 0.2em;
-}
-
-a, a:visited{
-    color: #c64322;
-}
-
-a:hover{
-    color: #333;
-}
-
 hr{
     padding: 0;
-    margin: 1.5em 1.5em 0.75em 0.5em;
+    margin: 1em 1em 0.75em 1em;
 }
 
 .contentWrapper{
@@ -76,7 +74,7 @@ div.clear{
 /*Header*/
 
 header{
-    padding: 2.5em 0 0.5em;
+    padding: 0 0 0 0;
     margin: 0;
     background-image: url(img/stonesHeader.jpg);
 }
@@ -94,7 +92,7 @@ header h2{
     font-weight: 300;
     font-size: 3.8em;
     color: #eac67a;
-    margin: 0 .5em 0 0.5em;
+    margin: 0 1.5em 0 1.5em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -103,7 +101,7 @@ header h2{
     width: 100%;
     height: 6em;
     background-color: #eac67a;
-    margin-bottom: -1em; 
+    margin: 1.5em auto;
     font-size: 1em;
     font-weight: bold; 
     color: #233237;
@@ -112,10 +110,10 @@ header h2{
 /*Nav Bars*/
 
 nav{
-    color:#000;
+    color:#984843;
     font-size: 1.7em;
     letter-spacing: 0.04em;
-    padding: 1em 1em 0.5em;
+    padding: 1em 1em 1em;
     margin: 1em 0;
 }
 
@@ -132,57 +130,48 @@ nav li{
 
 nav li a, nav li a:visited{
     text-decoration: none;
+    font-size: 1em;
     color: #984843;
-    padding: 0.3em 0.6em;
+    padding: 0.05em 0.25em .40em 0.25em;
 }
 
 nav li a:hover{
-    color: #984843;
-    background-color: rgba(252, 251, 243, 0.75);
+    color: #eac67a;
+    background-color: #984843;
 }
 
 nav#utilityMenu{
     float: right;
-    margin: -1.5em 0 0 0;
-    padding: 0.35em;
+    margin: 0;
+    padding: 0.25em;
     background-color: #eac67a;
-    height: 1.5em;
+    height: 35px;
+    vertical-align: middle;
 }
 
 nav#utilityMenu li{
-    padding: 0 0.25em 0 0.2em;
+    padding: 0 0.25em 0 0.25em;
     vertical-align: middle;
 }
 
-nav#utilityMenu ul li.acctNav a, nav#utilityMenu ul li.acctNav a:visited {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    height: 1.3em;
-    padding: 0.5em;
-    margin: -0.4em 0 0 0;
-    font-size: 0.8em;
-}
+nav#utilityMenu li a:hover{ background-color: #984843;}
 
-nav#utilityMenu ul li.acctNav a.active{
-    background-color: #984843;
-}
-
-nav#utilityMenu ul li.acctNav a:hover{
-    background-color: rgba(252, 251, 243, 0.7);
-    color:  #984843;
-}
-
-nav#utilityMenu li a, nav#utilityMenu li a:visited { padding:0;}
-nav#utilityMenu li a:hover{ background-color: transparent;}
-nav#utilityMenu ul li input#search{
+nav#shopMenu {
+    max-width: 1170px;
+    margin: auto;
+    background-color: #eac67a;
     vertical-align: middle;
-    margin: 0 0 0 1em;
 }
 
-nav#utilityMenu ul li.acctNav::before, nav#utilityMenu ul li input#search::before{
-    content: "| ";
-    color: #fcfbe6;
+nav#shopMenu li{
+    padding: 0 0.25em 0 0.25em;
+}
+
+.socialIcon{
+    width: 25px;
+    height: 25px;
+    fill: #984843;
+    vertical-align: middle;
 }
 
 /*Sidebar Section*/
@@ -192,28 +181,52 @@ section#sidebar{
     float: left;
     position: relative;
     display: block;
-    background-color: #fff;
-    margin: 2em 2em 2.0em 0;
-    padding: 2em 1em 2.0em 2em;
-    border-right: #eac67a solid 5px;
+    margin: 0;
+    padding: 0 1em 3em 0;
+}
+
+section#sidebar h1{
+    margin: 0 0 .15em 0.5em;
 }
 
 #falseFeed{
     margin: 0 0.25em;
-    border: solid black 5px;
-    border-radius: 5px;
+    background-color: #fff;
+    border: solid #eac67a 5px;
+    border-radius: 10px;
     padding: 1em;
+    font-size: 1em;
+}
+section#sidebar ul{
+    list-style: none;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0 0 0 1.0em;
+}
+
+section#sidebar ul li{
+    margin: 0;
+    padding: 0 0 0 0.2em;
+}
+
+section#sidebar ul li::before{
+    content: '';
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 0.5em;
+    margin-bottom: -.35em;
+    background-image: url(img/icons/avengers.svg);
+    background-size: contain;
 }
 
 /*Main Section*/
 
 section #main{
-    background-color: #fcfbe6;
+    background-color: #eac67a;
     margin: 0 0 2.0em;
     padding: 1.5em 0 2.0em 1.5em;
     display: inline-block;
-    border-radius: 2em;
-    box-shadow: 1px 1px 5px #777;
 }
 
 section div.panel{
@@ -227,7 +240,7 @@ section div.panel{
     border-radius: 0.6em;
 }
 
-section div.panel img.cheeseType {
+section div.panel img.superSourv {
     width: 100%;
 }
 
@@ -237,7 +250,7 @@ footer {
     background-color: #eac67a;
     height: 25px;
     font-size: 1.2em;
-    color: #233237;
+    color: #18121e;
     width: 100%;
     text-align: center;
     padding: 1em 1em;
