@@ -185,10 +185,6 @@ section#sidebar{
     padding: 0 1em 5.1em 0;
 }
 
-section#sidebar h1{
-    margin: 0 0 .15em 0.5em;
-}
-
 #falseFeed{
     margin: 0 0.25em;
     background-color: #fff;
@@ -295,12 +291,15 @@ footer a:hover{
 button{
     color: #c64322;
     background-color: #fff;
-    display: inline-block;
-    margin: 0 0.75em 0 0;
+    margin: 0;
     padding: 0.2em 0.5em;
     border: 1px solid #c64322;
     text-transform: uppercase;
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
 }
+
 button:hover{
     background-color: #fbf3db;
     border: 1px solid #745b2f;
